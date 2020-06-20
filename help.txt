@@ -1,0 +1,53 @@
+chcp 949   --korean
+dotnet tool install -g dotnet-ef --version 3.0.0   
+dotnet ef migrations add InitialCreate -p Persistence\ -s API\ 
+dotnet ef migrations list [options]
+
+path
+
+Auto Close Tag {Jun Han}
+Barcket Pair colorizer 2 {CoenraadS}
+C# for visual studio code (powered by OmniSharp)
+
+C# Extension (jchannon)
+
+ES& React/redux/GraphQL/React-Native snippets
+Material Icon Theme
+
+NuGet Package Manager{jmrog}
+Prettier-Code formatter {Esben Petersen}
+SQLite {alexcvzz}
+
+dotnet --h
+dotnet --list-sdks
+dotnet --list-runtimes
+dotnet --version
+dotnet --info
+dotnet --h
+dotnet new -h
+
+dotnet new sln
+dotnet new classlib -n API
+dotnet new classlib -n Domain
+dotnet new classlib -n Application
+dotnet new classlib -n Persistence
+dotnet new webapi -n API
+
+dotnet sln -h 
+
+dotnet sln add Domain\
+dotnet sln add Application\
+dotnet sln add Persistence\
+dotnet sln add API\
+dotnet sln Domain.sln add Domain/Domain.csproj Application/Application.csproj    Persistence/Persistence.csproj
+
+cd Application
+K:\Reactivities\Application>dotnet add reference ../Domain
+K:\Reactivities\Application>dotnet add reference ../Persistence
+K:\Reactivities\API>dotnet add reference ../Application/
+dotnet add reference ../Domain/
+
+dotnet run -p API\
+
+dotnet watch run (should run in Api folder)
+K:\Reactivities\dotnet ef migrations add SeedValues -p Persistence\ -s API\  (run in Reactivities folder)
